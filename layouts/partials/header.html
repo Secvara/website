@@ -1,0 +1,30 @@
+<header class="py-5 flex items-center z-30 w-full fixed transition-all">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+        <div class="uppercase font-black text-white text-3xl font-primary">
+            {{ if site.Params.logo }}
+            <a href="{{ site.BaseURL }}" class="inline-block">
+                <img src="{{ site.Params.logo | relURL }}" alt="" class="w-32 object-right">
+            </a>
+            {{ else }}
+            {{ site.Title }}
+            {{ end }}
+        </div>
+        <div class="flex items-center">
+            <nav class="font-primary uppercase text-lg lg:flex items-center absolute top-26 right-0 left-0 bg-background lg:static lg:bg-transparent transition-transform duration-300 translate-x-full lg:translate-x-0 menu">
+                {{ range site.Menus.main }}
+                <a href="{{ .URL }}" class="py-2 px-6 flex text-white hover:text-white/70 transition-colors">
+                    {{ .Name }}
+                </a>
+                {{ end }}
+            </nav>
+            <button class="lg:hidden flex flex-col ml-4 cursor-pointer menu-toggler">
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1 transition-transform duration-300">
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1 transition-transform duration-300">
+                </span>
+                <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1 transition-transform duration-300">
+                </span>
+            </button>
+        </div>
+    </div>
+</header>

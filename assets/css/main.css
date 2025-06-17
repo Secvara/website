@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+@theme {
+    --color-primary: #004399;
+    --color-light-blue: #005C9F;
+    --color-light-alt: #8EB0D2ff;
+    --color-background: var(--color-blue-950);
+
+    --font-primary: "Roboto", sans-serif;
+}
+
+.text-gradient {
+    @apply bg-gradient-to-r from-light-blue to-primary from-10% text-transparent bg-clip-text;
+}
+
+.main-heading > span {
+    @apply text-5xl bg-gradient-to-r from-light-blue to-primary from-10% text-transparent bg-clip-text;
+}
+
+.simple-heading > span {
+    @apply text-5xl;
+}
