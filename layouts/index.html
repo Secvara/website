@@ -208,7 +208,7 @@
             {{ .title | safeHTML }}
         </h3>
     </div>
-    <div class="mx-auto max-w-xl divide-y divide-black/10">
+    <div class="mx-auto px-6 max-w-xl divide-y divide-black/10">
         {{ range .faq }}
         <div class="py-5">
             <details class="group">
@@ -236,15 +236,15 @@
 {{/*  cta section  */}}
 {{ with .Params.cta_section }}
 <section id="cta" class="py-20 bg-background">
-    <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
         <h3 class="font-primary uppercase text-3xl font-extrabold leading-10 tracking-wider text-white main-heading">
             {{ .title | safeHTML }}
         </h3>
-        <div class="space-y-7">
+        <div class="space-y-20 md:space-y-7">
             <p class="font-primary text-xl leading-7 tracking-wide text-white">
                 {{ .details | safeHTML }}
             </p>
-            <div>
+            <div class="flex">
                 <a href="{{ .btn }}" class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
                     Book a Security Risk Assessment
                 </a>
