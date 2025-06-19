@@ -82,26 +82,19 @@
     const menu = document.querySelector(".menu");
     const menuToggler = document.querySelector(".menu-toggler");
     const header = document.querySelector("header");
-    let scrolled;
     if (window.scrollY > 1) {
       header.classList.remove("py-5");
-      header.classList.add("py-1", "bg-background", "shadow");
+      header.classList.add("py-1", "bg-light-alt", "shadow");
     } else {
-      header.classList.remove("py-1", "bg-background", "shadow");
+      header.classList.remove("py-1", "bg-light-alt", "shadow");
       header.classList.add("py-5");
     }
-    window.addEventListener("scroll", function() {
-      if (this.oldScroll < this.scrollY) {
-        header.classList.add("-translate-y-full");
-      } else {
-        header.classList.remove("-translate-y-full");
-      }
-      this.oldScroll = this.scrollY;
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 1) {
         header.classList.remove("py-5");
-        header.classList.add("py-1", "bg-background", "shadow");
+        header.classList.add("py-1", "bg-light-alt", "shadow");
       } else {
-        header.classList.remove("py-1", "bg-background", "shadow");
+        header.classList.remove("py-1", "bg-light-alt", "shadow");
         header.classList.add("py-5");
       }
       if (!menu.classList.contains("translate-x-full")) {
