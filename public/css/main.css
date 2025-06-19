@@ -415,11 +415,14 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .list-inside {
-    list-style-position: inside;
+  .scroll-mt-5 {
+    scroll-margin-top: calc(var(--spacing) * 5);
   }
-  .list-disc {
-    list-style-type: disc;
+  .scroll-mt-10 {
+    scroll-margin-top: calc(var(--spacing) * 10);
+  }
+  .scroll-mt-20 {
+    scroll-margin-top: calc(var(--spacing) * 20);
   }
   .list-none {
     list-style-type: none;
@@ -712,9 +715,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-left {
-    text-align: left;
   }
   .font-primary {
     font-family: var(--font-primary);

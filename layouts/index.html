@@ -35,7 +35,7 @@
 
 {{/*  about section  */}}
 {{ with .Params.about_section }}
-<section id="about" class="py-20 bg-white">
+<section id="about" class="py-20 bg-white scroll-mt-20">
     <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div class="space-y-7">
             <span class="w-20 h-2 bg-black inline-block"></span>
@@ -53,7 +53,7 @@
 
 {{/*  fit section  */}}
 {{ with .Params.fit_section }}
-<section id="fit" class="py-20 bg-light-alt">
+<section id="fit" class="py-20 bg-light-alt scroll-mt-20">
     <div class="max-w-lg mx-auto flex flex-col items-center px-6 space-y-20">
         <h3 class="font-primary uppercase text-3xl font-extrabold leading-10 tracking-wider text-black main-heading">
             {{ .title | safeHTML }}
@@ -85,7 +85,7 @@
 
 {{/*  services section  */}}
 {{ with .Params.services_section }}
-<section id="services" class="py-20 bg-white">
+<section id="services" class="py-20 bg-white scroll-mt-20">
     <div class="container mx-auto px-6 space-y-24">
         <div class="text-center">
             <h3 class="font-primary uppercase text-3xl font-extrabold leading-10 tracking-wider text-black main-heading">
@@ -202,7 +202,7 @@
 
 {{/*  faq section  */}}
 {{ with .Params.faqs_section }}
-<section id="faqs" class="py-20 bg-light-alt space-y-20">
+<section id="faqs" class="py-20 bg-light-alt space-y-20 scroll-mt-20">
     <div class="max-w-lg mx-auto text-center">
         <h3 class="font-primary uppercase text-3xl font-extrabold leading-10 tracking-wider text-black main-heading">
             {{ .title | safeHTML }}
