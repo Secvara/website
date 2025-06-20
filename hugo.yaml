@@ -28,6 +28,12 @@ menus:
 ###################
 params:
   logo: "images/transparent-logo.png"
+  description: For organizations where security isn’t optional — it’s mission-critical
+  images:
+    - "images/transparent-logo.png"
+  title: Secvara
+  social:
+    twitter: Secvara
 
 
 ###################

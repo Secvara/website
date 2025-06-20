@@ -7,6 +7,11 @@
 {{/*  styles  */}}
 {{ partialCached "styles.html" . }}
 
+{{/*  embdedded services  */}}
+{{ partial "opengraph.html" . }}
+{{ partial "schema.html" . }}
+{{ partial "twitter_cards.html" . }}
+
 {{/*  font  */}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
