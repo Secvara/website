@@ -4,9 +4,6 @@
 {{/*  title  */}}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Page.Title }} - {{ site.Title }}{{ end }}</title>
 
-{{/*  icon  */}}
-<link rel="shortcut icon" href='{{ "images/favicon.ico" | relURL }}' type="image/x-icon">
-
 {{/*  styles  */}}
 {{ partialCached "styles.html" . }}
 

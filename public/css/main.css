@@ -415,12 +415,6 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .scroll-mt-5 {
-    scroll-margin-top: calc(var(--spacing) * 5);
-  }
-  .scroll-mt-10 {
-    scroll-margin-top: calc(var(--spacing) * 10);
-  }
   .scroll-mt-20 {
     scroll-margin-top: calc(var(--spacing) * 20);
   }
@@ -429,6 +423,9 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -444,6 +441,9 @@
   }
   .items-start {
     align-items: flex-start;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;

@@ -8,7 +8,8 @@ hero_section:
     title: For organizations where <span>security</span> isn’t optional — it’s <span>mission-critical</span>
     details: >-
         We provide on-demand security leadership and support that adapts to your industry, your infrastructure, and your risk profile. From executive-level strategy to hands-on protection, you get security that scales with you — without compromise.
-    btn: /
+    btn: https://cal.com/secvara/pre-sra
+    outbound: true
 
 ################
 ##### About
@@ -63,5 +64,6 @@ cta_section:
     title: If You're <span>Serious</span> About <span>Security</span> — <span>Start Here</span>
     details: >-
         Schedule a Security Risk Assessment led by real experts. No sales pitch. Just clarity, insight, and a clear path forward.
-    btn: /
+    btn: https://cal.com/secvara/pre-sra
+    outbound: true
 ---
