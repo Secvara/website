@@ -8,9 +8,9 @@
 {{ partialCached "styles.html" . }}
 
 {{/*  embdedded services  */}}
-{{ partial "opengraph.html" . }}
-{{ partial "schema.html" . }}
-{{ partial "twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }} 
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 
 {{/*  font  */}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
