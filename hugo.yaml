@@ -39,6 +39,7 @@ params:
 ###################
 ##### DEV SETTINGS
 ###################
+enableRobotsTXT: true
 build:
   buildStats:
     enable: true
