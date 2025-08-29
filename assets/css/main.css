@@ -21,3 +21,22 @@
 .simple-heading > span {
     @apply text-5xl;
 }
+
+/* Themed typography for markdown content on inner pages */
+.content-body {
+  @apply text-black/80 leading-7;
+}
+.content-body p { margin: 0.75rem 0; }
+.content-body h2 { @apply font-primary font-extrabold text-2xl mt-8 mb-3; }
+.content-body h3 { @apply font-primary font-bold text-xl mt-6 mb-2; }
+.content-body h4 { @apply font-primary font-semibold text-lg mt-5 mb-2; }
+.content-body ul { list-style: disc; margin: 0.75rem 0 0.75rem 1.25rem; }
+.content-body ol { list-style: decimal; margin: 0.75rem 0 0.75rem 1.25rem; }
+.content-body li { margin: 0.35rem 0; }
+.content-body a { color: var(--color-primary); text-underline-offset: 2px; }
+.content-body a:hover { text-decoration: underline; }
+.content-body hr { margin: 2rem 0; opacity: 0.3; }
+.content-body blockquote { border-left: 4px solid rgba(0,0,0,0.15); padding-left: 1rem; margin: 1rem 0; }
+
+/* Anchor scroll offset so fixed header doesn't cover targets */
+.content-body [id] { scroll-margin-top: 6rem; }

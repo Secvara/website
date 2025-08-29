@@ -4,8 +4,24 @@
   <url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/deliverables/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/pricing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tiers/aware/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tiers/foundations/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tiers/pillars/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tiers/spire/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/secure-program/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tiers/</loc>
   </url>
 </urlset>

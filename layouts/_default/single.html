@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h1 class="font-primary text-3xl font-extrabold tracking-wider mb-4 simple-heading"><span>{{ .Title }}</span></h1>
+    <span class="w-20 h-2 bg-black inline-block mb-8"></span>
+    <div class="font-primary content-body">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}

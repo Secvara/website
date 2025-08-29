@@ -6,8 +6,11 @@
     
     {{ partial "head.html" . }}
 </head>
-<body>
+<body class="{{ if not .IsHome }}page-inner{{ end }}">
     {{ partial "header.html" . }}
+    {{ if not .IsHome }}
+    <div class="h-16 lg:h-20"></div>
+    {{ end }}
     {{ block "main" . }}
     {{ end }}
     {{ partial "footer.html" . }}

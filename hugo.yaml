@@ -19,6 +19,18 @@ menus:
     - name: "Services"
       url: /#services
       weight: 40
+    - name: "Program"
+      url: /secure-program/
+      weight: 41
+    - name: "Tiers"
+      url: /tiers/
+      weight: 42
+    - name: "Deliverables"
+      url: /deliverables/
+      weight: 43
+    - name: "Pricing"
+      url: /pricing/
+      weight: 44
     - name: FAQs
       url: /#faqs
       weight: 50

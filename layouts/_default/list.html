@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h1 class="font-primary text-3xl font-extrabold tracking-wider mb-4 simple-heading"><span>{{ .Title }}</span></h1>
+    <span class="w-20 h-2 bg-black inline-block mb-8"></span>
+    {{ with .Content }}
+    <div class="font-primary content-body mb-10">{{ . }}</div>
+    {{ end }}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {{ range .Pages }}
+      <a class="block p-6 rounded-lg border border-black/10 shadow hover:shadow-lg transition" href="{{ .RelPermalink }}">
+        <h2 class="text-xl font-bold font-primary mb-2">{{ .Title }}</h2>
+        {{ with .Params.description }}
+          <p class="text-black/70 font-primary">{{ . }}</p>
+        {{ else }}
+          {{ with .Summary }}<p class="text-black/70 font-primary">{{ . }}</p>{{ end }}
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
