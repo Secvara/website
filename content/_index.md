@@ -15,9 +15,9 @@ hero_section:
 ##### About
 ###############
 about_section:
-    title: Not Just a Security Vendor — Your <span>Embedded</span> Security Team
+    title: Become <span>SECURE Aware</span>
     details: >-
-        We partner with organizations who take their security seriously — those navigating HIPAA, vendor scrutiny, regulatory audits, or rising ransomware threats. <br><br> Instead of one person or one tool, we deliver an adaptable team with the expertise and clarity to protect what matters most. Whether you're scaling, merging, or modernizing, we help you stay secure without slowing down.
+        SECURE Aware is a one‑time Security Risk Assessment (SRA) that gives you a clear baseline of risk and compliance. We map your posture to HIPAA and NIST CSF, identify the most important gaps, and deliver a prioritized roadmap your team can act on. It’s the fastest way to get clarity — and the first step toward building a right‑sized security program.
 
 ################
 ##### Fit
@@ -35,13 +35,6 @@ fit_section:
 ###############
 services_section:
     title: What <span>You</span> Get
-    cards:
-        - title: Security Risk Assessments
-          blurb: Comprehensive, audit-ready reviews that help you understand, quantify, and reduce risk — especially in regulated environments like healthcare.
-        - title: Security Team as a Service
-          blurb: A flexible, embedded security team that works as an extension of your organization.
-        - title: Fractional CISO
-          blurb: Board-level security leadership and risk prioritization tailored to your organization — and your reality.
     tiers:
         - name: SECURE Foundations
           blurb: Establish the essentials and build momentum with quarterly reviews.
@@ -57,6 +50,10 @@ services_section:
           blurb: Ongoing oversight, structured reporting, training, vendor and incident management.
           price: "From $5,000/month"
           bullets:
+              - Annual Security Risk Assessment (NIST CSF)
+              - Policy Starter Kit (AUP, InfoSec, IR, Vendor, BCP)
+              - Risk Register setup + 90‑day quick wins
+              - Quarterly leadership check‑ins
               - Monthly risk updates + analyst support
               - Quarterly Security Report Deck
               - Annual training + vendor reviews
@@ -67,6 +64,14 @@ services_section:
           blurb: Executive‑level leadership, resilience, and audit readiness.
           price: "From $12,000/month"
           bullets:
+              - Annual Security Risk Assessment (NIST CSF)
+              - Policy Starter Kit (AUP, InfoSec, IR, Vendor, BCP)
+              - Risk Register setup + 90‑day quick wins
+              - Quarterly leadership check‑ins
+              - Monthly risk updates + analyst support
+              - Quarterly Security Report Deck
+              - Annual training + vendor reviews
+              - IR tabletop; semi‑annual board briefings
               - Fractional CISO + board presence
               - Architecture reviews (cloud, network, endpoint)
               - Regulatory readiness; BC/DR planning + exercises
