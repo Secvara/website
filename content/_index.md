@@ -65,7 +65,7 @@ services_section:
           link: tiers/pillars/
           cta: Learn more
         - name: SECURE Spire
-          blurb: Executive‑level leadership, resilience, and audit readiness.
+          blurb: Comprehensive security, resilience, and audit readiness that scales with you.
           price: "From $12,000/month"
           bullets:
               - Annual Security Risk Assessment (NIST CSF)
