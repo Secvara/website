@@ -5,15 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu');
   const menuToggler = document.querySelector('.menu-toggler');
   const header = document.querySelector('header');
+  if (!header) return;
   const isInner = document.body.classList.contains('page-inner');
+  const navLinks = document.querySelectorAll('header nav a');
 
   const setHeaderState = () => {
-    if (isInner || window.scrollY > 1) {
-      header.classList.remove('py-5');
-      header.classList.add('py-1', 'bg-light-alt', 'shadow');
+    const atTop = window.scrollY <= 1;
+    if (!isInner && atTop) {
+      header.classList.remove('bg-white', 'shadow', 'py-1');
+      header.classList.add('bg-transparent', 'py-5');
+      navLinks.forEach(a => { a.classList.remove('text-black'); a.classList.add('text-white'); });
     } else {
-      header.classList.remove('py-1', 'bg-light-alt', 'shadow');
-      header.classList.add('py-5');
+      header.classList.remove('bg-transparent', 'py-5');
+      header.classList.add('bg-white', 'shadow', 'py-1');
+      navLinks.forEach(a => { a.classList.remove('text-white'); a.classList.add('text-black'); });
     }
   };
 
@@ -22,24 +27,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     setHeaderState();
-    if (!menu.classList.contains('translate-x-full')) {
+    if (menu && menuToggler && !menu.classList.contains('translate-x-full')) {
       menu.classList.add('translate-x-full');
-      menuToggler.children[0].classList.remove('rotate-45');
-      menuToggler.children[0].classList.remove('translate-y-2');
-      menuToggler.children[1].classList.remove('scale-0');
-      menuToggler.children[2].classList.remove('-rotate-45');
-      menuToggler.children[2].classList.remove('-translate-y-2');
-    };
+      if (menuToggler.children[0]) menuToggler.children[0].classList.remove('rotate-45', 'translate-y-2');
+      if (menuToggler.children[1]) menuToggler.children[1].classList.remove('scale-0');
+      if (menuToggler.children[2]) menuToggler.children[2].classList.remove('-rotate-45', '-translate-y-2');
+    }
   });
 
-  menuToggler.addEventListener('click', () => {
-    menu.classList.toggle('translate-x-full');
-    menuToggler.children[0].classList.toggle('rotate-45');
-    menuToggler.children[0].classList.toggle('translate-y-2');
-    menuToggler.children[1].classList.toggle('scale-0');
-    menuToggler.children[2].classList.toggle('-rotate-45');
-    menuToggler.children[2].classList.toggle('-translate-y-2');
-  });
+  if (menu && menuToggler) {
+    menuToggler.addEventListener('click', () => {
+      menu.classList.toggle('translate-x-full');
+      const isOpen = !menu.classList.contains('translate-x-full');
+      if (isOpen) {
+        navLinks.forEach(a => { a.classList.remove('text-white'); a.classList.add('text-black'); });
+      } else {
+        setHeaderState();
+      }
+      if (menuToggler.children[0]) { menuToggler.children[0].classList.toggle('rotate-45'); menuToggler.children[0].classList.toggle('translate-y-2'); }
+      if (menuToggler.children[1]) { menuToggler.children[1].classList.toggle('scale-0'); }
+      if (menuToggler.children[2]) { menuToggler.children[2].classList.toggle('-rotate-45'); menuToggler.children[2].classList.toggle('-translate-y-2'); }
+    });
+  }
 
   // Start floating animation
   new FloatingCircles('#animation-container', '.circle', {
