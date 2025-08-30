@@ -5,7 +5,7 @@ title: Home
 ##### Hero
 ###############
 hero_section:
-    title: "Beyond Simple <span>Compliance</span> — Secvara <span>SECURE</span>"
+    title: "Beyond Simple <span>Compliance</span> Become Secvara <span>SECURE</span>"
     details: >-
         We provide on‑demand security leadership that adapts to your industry, your infrastructure, and your risk profile. Secvara <strong>SECURE</strong> is our right‑sized program: start with a one‑time Security Risk Assessment (<strong>SECURE Aware</strong>), then scale through <strong>Foundations</strong>, <strong>Pillars</strong>, or <strong>Spire</strong> for the ongoing oversight and execution you need — exactly when you need it.
     btn: https://cal.com/secvara/pre-sra
