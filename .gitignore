@@ -14,3 +14,7 @@ hugo.linux
 
 # Node modules directory
 /node_modules/
+
+# Local dev server artifacts
+hugo.out
+.hugo-dev.pid

@@ -55,3 +55,12 @@ header.bg-white .site-logo {
 header.bg-transparent .site-logo {
   filter: brightness(0) invert(1);
 }
+
+/* Hamburger (menu toggler) colors based on header background */
+/* Blue on white header; white on transparent header */
+header.bg-white .menu-toggler span {
+  background-color: var(--color-primary) !important;
+}
+header.bg-transparent .menu-toggler span {
+  background-color: #ffffff !important;
+}
