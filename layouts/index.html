@@ -61,56 +61,7 @@
             {{ end }}
         </div>
 
-        {{/* SECURE Path row */}}
-        {{ with .secure_path }}
-        <div class="space-y-6 mt-16">
-          <div class="text-center">
-            <h4 class="font-primary uppercase text-2xl font-extrabold leading-10 tracking-wider text-black">{{ .title | safeHTML }}</h4>
-          </div>
-          {{ with .steps }}
-          <div class="flex flex-wrap justify-center gap-4">
-            {{ range . }}
-              {{ $parts := split . ":" }}
-              {{ $title := (index $parts 0 | trim) }}
-              {{ $desc := (delimit (after 1 $parts) ":" | trim) }}
-              <div class="bg-light-alt border border-black/10 rounded-lg px-4 py-3 w-full sm:w-auto max-w-sm sm:max-w-none">
-                <div class="font-primary font-bold text-black">{{ $title }}</div>
-                {{ if $desc }}<div class="font-primary text-black/80 text-sm">{{ $desc }}</div>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}
-
-        {{/* How We Work card grid */}}
-        {{ with .how_we_work }}
-        <div class="space-y-8 mt-16">
-          <div class="text-center">
-            <h4 class="font-primary uppercase text-2xl font-extrabold leading-10 tracking-wider text-black">{{ .title | safeHTML }}</h4>
-          </div>
-          {{ with .steps }}
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {{ range . }}
-              {{ $parts := split . ":" }}
-              {{ $title := (index $parts 0 | trim) }}
-              {{ $desc := (delimit (after 1 $parts) ":" | trim) }}
-              <div class="bg-white border border-black/10 p-6 rounded-lg shadow">
-                <div class="font-primary font-bold text-lg mb-2">{{ $title }}</div>
-                {{ if $desc }}<p class="font-primary text-black/80">{{ $desc }}</p>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-          {{ end }}
-          {{ with .links }}
-          <div class="text-center">
-            {{ range . }}
-              <a href="{{ .href | relURL }}" class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-3 hover:bg-primary/80">{{ .label }}</a>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}
+        {{/* Removed SECURE Path + How We Work preview from Fit; rendered below */}}
 
     </div>
 </section>
@@ -151,31 +102,83 @@
             </h3>
         </div>
         <div class="space-y-30">
-            <div class="bg-white rounded-lg text-lg font-primary max-w-md sm:max-w-lg mx-auto lg:mx-0 flex flex-col sm:flex-row border-3 border-dashed border-primary relative">
-                <div class="bg-primary/40 sm:rounded-l-lg sm:w-2/6 min-h-10 font-primary text-2xl text-black font-bold justify-center items-center flex">Step 1</div>
-                <div class="py-2 px-5 font-primary text-black shadow-inner space-y-2 relative z-20 bg-white">
-                    <strong class="text-lg font-bold">We start with a risk assessment</strong>
-                    <p class="text-sm">Understand where your vulnerabilities are — and what matters most to fix.</p>
+          {{ with .secure_path }}
+            {{ $steps := .steps }}
+            {{ $last := sub (len $steps) 1 }}
+            {{ range $i, $s := $steps }}
+              {{ $type := printf "%T" $s }}
+              {{ $pos := "" }}
+              {{ if eq $i 0 }}{{ $pos = " lg:mx-0" }}{{ end }}
+              {{ if eq $i $last }}{{ $pos = " lg:mr-0 lg:ml-auto" }}{{ end }}
+              {{ if eq $type "string" }}
+                {{ $parts := split $s ":" }}
+                {{ $t := (index $parts 0 | trim) }}
+                {{ $d := (delimit (after 1 $parts) ":" | trim) }}
+                <div class="bg-white rounded-lg text-lg font-primary max-w-md sm:max-w-lg mx-auto flex flex-col sm:flex-row border-3 border-dashed border-primary relative{{ $pos }}">
+                  <div class="bg-primary/40 sm:rounded-l-lg sm:w-2/6 min-h-10 font-primary text-2xl text-black font-bold justify-center items-center flex">Step {{ add $i 1 }}</div>
+                  <div class="py-2 px-5 font-primary text-black shadow-inner space-y-2 relative z-20 bg-white">
+                    <strong class="text-lg font-bold">{{ $t }}</strong>
+                    {{ if $d }}<p class="text-sm">{{ $d }}</p>{{ end }}
+                  </div>
+                  {{ if lt $i $last }}
+                    {{ partial "svg/curved-arrow.html" (dict "class" "w-60 absolute z-10 top-10 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:top-0 sm:right-0 lg:top-auto lg:-right-44") }}
+                  {{ end }}
                 </div>
-                {{ partial "svg/curved-arrow.html" (dict "class" "w-60 absolute z-10 top-10 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:top-0 sm:right-0 lg:top-auto lg:-right-44") }}
-            </div>
+              {{ else }}
+                {{ range $k, $v := $s }}
+                  <div class="bg-white rounded-lg text-lg font-primary max-w-md sm:max-w-lg mx-auto flex flex-col sm:flex-row border-3 border-dashed border-primary relative{{ $pos }}">
+                    <div class="bg-primary/40 sm:rounded-l-lg sm:w-2/6 min-h-10 font-primary text-2xl text-black font-bold justify-center items-center flex">Step {{ add $i 1 }}</div>
+                    <div class="py-2 px-5 font-primary text-black shadow-inner space-y-2 relative z-20 bg-white">
+                      <strong class="text-lg font-bold">{{ $k }}</strong>
+                      {{ if $v }}<p class="text-sm">{{ $v }}</p>{{ end }}
+                    </div>
+                    {{ if lt $i $last }}
+                      {{ partial "svg/curved-arrow.html" (dict "class" "w-60 absolute z-10 top-10 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:top-0 sm:right-0 lg:top-auto lg:-right-44") }}
+                    {{ end }}
+                  </div>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
 
-            <div class="bg-white rounded-lg text-lg font-primary max-w-md sm:max-w-lg mx-auto flex flex-col sm:flex-row border-3 border-dashed border-primary relative">
-                <div class="bg-primary/40 sm:rounded-l-lg sm:w-2/6 min-h-10 font-primary text-2xl text-black font-bold justify-center items-center flex">Step 2</div>
-                <div class="py-2 px-5 font-primary text-black shadow-inner space-y-2 relative z-20 bg-white">
-                    <strong class="text-lg font-bold">We act as your embedded team</strong>
-                    <p class="text-sm">From compliance questions to incident prep, we operate as part of your organization.</p>
-                </div>
-                {{ partial "svg/curved-arrow.html" (dict "class" "w-60 absolute z-10 top-10 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:top-0 sm:right-0 lg:top-auto lg:-right-44") }}
+          {{/* How We Work dynamic grid */}}
+          {{ with .how_we_work }}
+            <div class="space-y-8 mt-16">
+              <div class="text-center">
+                <h4 class="font-primary uppercase text-2xl font-extrabold leading-10 tracking-wider text-black">{{ .title | safeHTML }}</h4>
+              </div>
+              {{ with .steps }}
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {{ range . }}
+                  {{ $type := printf "%T" . }}
+                  {{ if eq $type "string" }}
+                    {{ $parts := split . ":" }}
+                    {{ $t := (index $parts 0 | trim) }}
+                    {{ $d := (delimit (after 1 $parts) ":" | trim) }}
+                    <div class="bg-white border border-black/10 p-6 rounded-lg shadow">
+                      <div class="font-primary font-bold text-lg mb-2">{{ $t }}</div>
+                      {{ if $d }}<p class="font-primary text-black/80">{{ $d }}</p>{{ end }}
+                    </div>
+                  {{ else }}
+                    {{ range $k, $v := . }}
+                      <div class="bg-white border border-black/10 p-6 rounded-lg shadow">
+                        <div class="font-primary font-bold text-lg mb-2">{{ $k }}</div>
+                        {{ if $v }}<p class="font-primary text-black/80">{{ $v }}</p>{{ end }}
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </div>
+              {{ end }}
+              {{ with .links }}
+              <div class="text-center">
+                {{ range . }}
+                  <a href="{{ .href | relURL }}" class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-3 hover:bg-primary/80">{{ .label }}</a>
+                {{ end }}
+              </div>
+              {{ end }}
             </div>
-
-            <div class="bg-white rounded-lg text-lg font-primary max-w-md sm:max-w-lg mx-auto lg:mr-0 lg:ml-auto flex flex-col sm:flex-row border-3 border-dashed border-primary relative">
-                <div class="bg-primary/40 sm:rounded-l-lg sm:w-2/6 min-h-10 font-primary text-2xl text-black font-bold justify-center items-center flex">Step 3</div>
-                <div class="py-2 px-5 font-primary text-black shadow-inner space-y-2 relative z-20 bg-white">
-                    <strong class="text-lg font-bold">We adapt as you grow</strong>
-                    <p class="text-sm">Security isn’t static. Whether you’re onboarding vendors, scaling infrastructure, or navigating change — we scale with you.</p>
-                </div>
-            </div>
+          {{ end }}
         </div>
     </div>
 </section>

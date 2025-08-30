@@ -144,19 +144,9 @@ flow_chart_section:
     secure_path:
         title: The SECURE Path
         steps:
-            - Aware: One‑time SRA and roadmap
-            - Foundations: Establish essentials + quarterly reviews
-            - Pillars: Oversight, reporting, training, vendors, IR
-            - Spire: CISO leadership, resilience, audit readiness
-    how_we_work:
-        title: How We Work
-        steps:
-            - Discover: Questionnaire, interviews, SRA, quick wins
-            - Implement: Policies, controls, risk reduction
-            - Sustain: Updates, reporting, testing, improvement
-        links:
-            - label: What’s included
-              href: deliverables/
+            - We start with a risk assessment: Understand where your vulnerabilities are — and what matters most to fix.
+            - We act as your embedded team: From compliance questions to incident prep, we operate as part of your organization.
+            - We adapt as you grow: Security isn’t static. Whether you’re onboarding vendors, scaling infrastructure, or navigating change — we scale with you.
 
 ################
 ##### FAQs
