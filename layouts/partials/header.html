@@ -1,6 +1,6 @@
-<header class="py-5 bg-transparent flex items-center z-50 w-full fixed transition-all">
+<header class="{{ if .IsHome }}py-5 bg-transparent{{ else }}py-1 bg-white shadow{{ end }} flex items-center z-50 w-full fixed transition-all">
     <div class="container mx-auto px-6 flex items-center justify-between">
-        <div class="uppercase font-black text-white text-3xl font-primary">
+        <div class="uppercase font-black {{ if .IsHome }}text-white{{ else }}text-black{{ end }} text-3xl font-primary">
             {{ if site.Params.logo }}
             <a href="{{ site.BaseURL }}" class="inline-block">
                 <img src="{{ site.Params.logo | relURL }}" alt="" class="w-32 object-right">
@@ -12,7 +12,7 @@
         <div class="flex items-center">
             <nav class="font-primary uppercase text-lg lg:flex items-center absolute top-26 right-0 left-0 bg-white lg:static lg:bg-transparent transition-transform duration-300 translate-x-full lg:translate-x-0 menu">
                 {{ range site.Menus.main }}
-                <a href="{{ .URL }}" class="py-2 px-6 flex text-white hover:text-white/70 transition-colors">
+                <a href="{{ .URL }}" class="py-2 px-6 flex {{ if $.IsHome }}text-white hover:text-white/70{{ else }}text-black hover:text-black/70{{ end }} transition-colors">
                     {{ .Name }}
                 </a>
                 {{ end }}

@@ -29,8 +29,7 @@ about_section:
 fit_section:
     title: Who We Work <br><span>Best</span> With
     boxes:
-        - Growing mid-sized healthcare organizations
-        - Teams without a dedicated CISO
+        - Growing teams without a dedicated CISO
         - Organizations preparing for HIPAA or SOC 2 audits
         - Companies who’ve outgrown basic IT support but aren’t ready to hire in-house
 
