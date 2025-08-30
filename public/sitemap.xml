@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://secvara.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/deliverables/</loc>
+    <loc>https://secvara.com/deliverables/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://secvara.com/</loc>
   </url><url>
-    <loc>http://localhost:1313/pricing/</loc>
+    <loc>https://secvara.com/pricing/</loc>
   </url><url>
-    <loc>http://localhost:1313/tiers/aware/</loc>
+    <loc>https://secvara.com/tiers/aware/</loc>
   </url><url>
-    <loc>http://localhost:1313/tiers/foundations/</loc>
+    <loc>https://secvara.com/tiers/foundations/</loc>
   </url><url>
-    <loc>http://localhost:1313/tiers/pillars/</loc>
+    <loc>https://secvara.com/tiers/pillars/</loc>
   </url><url>
-    <loc>http://localhost:1313/tiers/spire/</loc>
+    <loc>https://secvara.com/tiers/spire/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://secvara.com/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/secure-program/</loc>
+    <loc>https://secvara.com/secure-program/</loc>
   </url><url>
-    <loc>http://localhost:1313/tiers/</loc>
+    <loc>https://secvara.com/tiers/</loc>
   </url>
 </urlset>

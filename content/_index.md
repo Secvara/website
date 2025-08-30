@@ -17,7 +17,11 @@ hero_section:
 about_section:
     title: Become <span>SECURE Aware</span>
     details: >-
-        SECURE Aware is a one‑time Security Risk Assessment (SRA) that gives you a clear baseline of risk and compliance. We map your posture to HIPAA and NIST CSF, identify the most important gaps, and deliver a prioritized roadmap your team can act on. It’s the fastest way to get clarity — and the first step toward building a right‑sized security program.
+        SECURE Aware is a one‑time Security Risk Assessment (SRA) that gives you a clear baseline of risk and compliance. We evaluate your organization against NIST CSF, then crosswalk to all compliance requirements unique to your organization. <br><br>
+
+        From there, we identify the most important gaps and deliver a prioritized roadmap your team can act on. It’s the fastest way to get clarity and the first step toward building a right‑sized security program. <br><br>
+
+        This is the beginning of your security journey and our partnership.
 
 ################
 ##### Fit
@@ -155,7 +159,7 @@ flow_chart_section:
               href: deliverables/
 
 ################
-##### FAQS
+##### FAQs
 ###############
 faqs_section:
     title: Frequently Asked <span>Questions</span>

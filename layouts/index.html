@@ -20,7 +20,7 @@
                 </p>
                 <div class="flex">
                     <a href="{{ .btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
-                        Book a Free Consultation
+                        Become SECURE Aware
                     </a>
                 </div>
             </div>
@@ -131,7 +131,7 @@
             <p>{{ .details | safeHTML }}</p>
             {{ $btn := (.btn | default "https://cal.com/secvara/pre-sra") }}
             <div class="mt-6">
-                <a href="{{ $btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors">Book a Free Consultation</a>
+                <a href="{{ $btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors">Become SECURE Aware</a>
             </div>
         </div>
     </div>
@@ -220,7 +220,7 @@
           <h4 class="font-primary text-2xl font-extrabold text-center">Tiers</h4>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {{ range . }}
-            <div class="bg-white border border-black/10 p-6 rounded-lg shadow">
+            <div class="bg-white border border-black/10 p-6 rounded-lg shadow h-full flex flex-col">
               <h5 class="font-primary text-xl font-bold mb-2">{{ .name }}</h5>
               <p class="font-primary text-black/80 mb-2">{{ .blurb }}</p>
               {{ with .price }}
@@ -231,7 +231,7 @@
                 {{ range . }}<li>{{ . }}</li>{{ end }}
               </ul>
               {{ end }}
-              <div class="mt-2 flex items-center gap-3">
+              <div class="mt-auto pt-2 flex items-center gap-3">
                 <a class="uppercase font-primary py-2 px-4 rounded-lg bg-primary text-white hover:bg-primary/80" href="https://cal.com/secvara/pre-sra" target="_blank">Book a Call</a>
                 {{ if .link }}
                   <a class="font-primary text-sm text-black/70 hover:text-black underline" href="{{ .link | relURL }}">Learn more</a>
@@ -297,8 +297,8 @@
                 {{ .details | safeHTML }}
             </p>
             <div class="flex">
-                <a href="{{ .btn }}" {{ if .outbound }}target="_black"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
-                    Book a Free Consultation
+                <a href="{{ .btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
+                    Become SECURE Aware
                 </a>
             </div>
         </div>
