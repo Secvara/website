@@ -10,18 +10,24 @@ menus:
     - name: "Home"
       url: /
       weight: 10
-    - name: "About"
-      url: /#about
-      weight: 20
-    - name: "Fit"
+    - name: "Who We Work With"
       url: /#fit
+      weight: 20
+    - name: "SECURE Aware"
+      url: /#about
       weight: 30
-    - name: "Services"
-      url: /#services
+    - name: "How It Works"
+      url: /#chart
       weight: 40
+    - name: "What You Get"
+      url: /#services
+      weight: 50
     - name: FAQs
       url: /#faqs
-      weight: 50
+      weight: 60
+    - name: "Get Started"
+      url: /#cta
+      weight: 70
 
 ###################
 ##### GENERAL SETTING
