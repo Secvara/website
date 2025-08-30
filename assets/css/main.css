@@ -40,3 +40,9 @@
 
 /* Anchor scroll offset so fixed header doesn't cover targets */
 .content-body [id] { scroll-margin-top: 6rem; }
+
+/* Header link hover colors: turn blue on light header/menu */
+header.bg-white nav a:hover,
+header .menu.bg-white a:hover {
+  color: var(--color-primary) !important;
+}
