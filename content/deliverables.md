@@ -79,6 +79,10 @@ Quantify value realized and define the roadmap for the next term.
 Document maturity achievements for stakeholders and partners.
 - Included in: Spire (at renewal/milestones).
 
+## Vulnerability Scanning + Advisory {#vulnerability-scanning}
+Scheduled internal and/or external vulnerability scans with curated, prioritized findings and remediation guidance integrated into your risk register.
+- Included in: Pillars • Spire.
+
 ---
 
 ## Included in Tiers

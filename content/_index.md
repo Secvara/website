@@ -32,7 +32,7 @@ fit_section:
     boxes:
         - Growing teams without a dedicated CISO
         - Organizations preparing for HIPAA or SOC 2 audits
-        - Companies who’ve outgrown basic IT support but aren’t ready to hire in-house
+        - Companies wanting more security on a faster timeline than hiring in house
 
 ################
 ##### Services
@@ -89,51 +89,59 @@ services_section:
               blurb: Baseline risk mapped to your frameworks with a prioritized roadmap.
               link: deliverables/#security-risk-assessment-sra
               tiers:
-                - Aware
-                - Foundations
-                - Pillars
-                - Spire
+                - Aware (One‑time)
+                - Foundations (Annual)
+                - Pillars (Annual)
+                - Spire (Strategic)
             - name: Risk Register
               blurb: Clear ownership, status, and mitigation with monthly updates in Pillars.
               link: deliverables/#risk-register
               tiers:
-                - Foundations
-                - Pillars
-                - Spire
-            - name: Quarterly Security Report
-              blurb: Executive‑ready KPIs, risk movement, and next‑quarter plan.
+                - Aware (One‑time)
+                - Foundations (Quarterly)
+                - Pillars (Monthly)
+                - Spire (Strategic)
+            - name: Quarterly Security Report (Quarterly)
+              blurb: Executive‑ready KPIs, risk movement, and next‑quarter plan; tracked and mapped to your unique business needs.
               link: deliverables/#quarterly-security-report-deck
               tiers:
-                - Pillars
-                - Spire
-            - name: Incident Response Tabletop
+                - Pillars (Quarterly)
+                - Spire (Quarterly)
+            - name: Incident Response Tabletop (Annual)
               blurb: Realistic scenarios; after‑action report and action plan.
               link: deliverables/#incident-response-tabletop-exercise
               tiers:
-                - Pillars
-                - Spire
-            - name: Vendor Risk Review
-              blurb: Standardized due diligence and risk scoring for third parties.
-              link: deliverables/#vendor-risk-review
+                - Pillars (Annual)
+                - Spire (Annual)
+            - name: Policy Starter Kit & Taliored Advice
+              blurb: Editable AUP, InfoSec, IR, Vendor, and BCP templates with guidance.
+              link: deliverables/#policy-starter-kit
               tiers:
-                - Pillars
-                - Spire
-            - name: Awareness Training
-              blurb: Annual program with tracking and targeted refreshers.
-              link: deliverables/#end-user-awareness-training
+                - Foundations (One‑time)
+                - Pillars (One‑time)
+                - Spire (One‑time)
+            - name: 90‑Day Quick Wins
+              blurb: Early, high‑impact fixes prioritized to reduce risk quickly.
+              link: deliverables/#90-day-quick-wins-checklist
               tiers:
-                - Pillars
-                - Spire
-            - name: Advanced Security Architecture Reviews
-              blurb: Defense‑in‑depth guidance for network, cloud, and endpoints.
-              link: deliverables/#advanced-security-architecture-reviews
+                - Aware (One‑time)
+                - Foundations (Quarterly)
+                - Pillars (Monthly)
+                - Spire (Strategic)
+            - name: Security Team Support (Analyst Hours)
+              blurb: Embedded analyst support for reviews, vendor diligence, and implementation.
+              link: deliverables/#security-team-support
               tiers:
-                - Spire
-            - name: Business Continuity and Disaster Recovery (BC/DR) Plans
-              blurb: Business Impact Analysis (BIA), Recovery Time/Point Objectives (RTO/RPO), runbooks, and annual exercises.
-              link: deliverables/#business-continuity--disaster-recovery-bcdr
+                - Pillars (Ongoing)
+                - Spire (Ongoing)
+            - name: Vulnerability Scanning + Advisory
+              blurb: Scheduled internal/external scans with prioritized findings and remediation guidance.
+              link: deliverables/#vulnerability-scanning
               tiers:
-                - Spire
+                - Aware (One‑time)
+                - Foundations (Quarterly)
+                - Pillars (Ongoing)
+                - Spire (Ongoing)
     # Pricing snippet removed; pricing now shown per tier
 
 ################
