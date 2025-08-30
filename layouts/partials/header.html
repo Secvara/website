@@ -3,7 +3,7 @@
         <div class="uppercase font-black {{ if .IsHome }}text-white{{ else }}text-black{{ end }} text-3xl font-primary">
             {{ if site.Params.logo }}
             <a href="{{ site.BaseURL }}" class="inline-block">
-                <img src="{{ site.Params.logo | relURL }}" alt="" class="w-32 object-right">
+                <img src="{{ site.Params.logo | relURL }}" alt="Secvara" class="w-32 object-right site-logo">
             </a>
             {{ else }}
             {{ site.Title }}

@@ -46,3 +46,12 @@ header.bg-white nav a:hover,
 header .menu.bg-white a:hover {
   color: var(--color-primary) !important;
 }
+
+/* Logo color handling: white on transparent, dark on white header */
+/* Logo color logic: colorful on white header, solid white on transparent */
+header.bg-white .site-logo {
+  filter: none;
+}
+header.bg-transparent .site-logo {
+  filter: brightness(0) invert(1);
+}
