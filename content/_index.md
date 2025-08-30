@@ -16,6 +16,7 @@ hero_section:
 ###############
 about_section:
     title: Become <span>SECURE Aware</span>
+    price: "From $7,500 (one‑time)"
     details: >-
         SECURE Aware is a one‑time Security Risk Assessment (SRA) that gives you a clear baseline of risk and compliance. We evaluate your organization against NIST CSF, then crosswalk to all compliance requirements unique to your organization. <br><br>
 

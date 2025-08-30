@@ -20,7 +20,7 @@
                 </p>
                 <div class="flex">
                     <a href="{{ .btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
-                        Become SECURE Aware
+                        Become Secvara SECURE
                     </a>
                 </div>
             </div>
@@ -81,8 +81,11 @@
         <div class="font-primary text-xl leading-7 tracking-wide">
             <p>{{ .details | safeHTML }}</p>
             {{ $btn := (.btn | default "https://cal.com/secvara/pre-sra") }}
-            <div class="mt-6">
-                <a href="{{ $btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors">Become SECURE Aware</a>
+            <div class="mt-6 flex items-center gap-4 flex-wrap">
+                <a href="{{ $btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors">Become Secvara SECURE</a>
+                {{ with .price }}
+                <div class="font-primary text-sm text-black/70"><strong>{{ . }}</strong></div>
+                {{ end }}
             </div>
         </div>
     </div>
@@ -301,7 +304,7 @@
             </p>
             <div class="flex">
                 <a href="{{ .btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md mr-4 hover:bg-primary/80 transition-colors">
-                    Become SECURE Aware
+                    Become Secvara SECURE
                 </a>
             </div>
         </div>
