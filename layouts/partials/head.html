@@ -7,6 +7,8 @@
 {{/*  styles  */}}
 {{ partialCached "styles.html" . }}
 
+{{ partial "google-ads-tag.html" . }}
+
 {{/*  embdedded services  */}}
 {{ template "_internal/opengraph.html" . }} 
 {{ template "_internal/schema.html" . }}

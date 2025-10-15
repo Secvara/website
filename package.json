@@ -2,5 +2,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.10",
     "tailwindcss": "^4.1.10"
+  },
+  "optionalDependencies": {
+    "@parcel/watcher-linux-arm64-glibc": "^2.5.1"
   }
 }
