@@ -42,6 +42,11 @@ params:
     twitter: Secvara
   googleAdsId: "AW-17655410071"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 
 ###################
 ##### DEV SETTINGS
