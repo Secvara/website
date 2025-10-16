@@ -7,6 +7,7 @@
     {{ partial "head.html" . }}
 </head>
 <body class="{{ if not .IsHome }}page-inner{{ end }}">
+    {{ partial "google-tag-manager-noscript.html" . }}
     {{ partial "header.html" . }}
     {{ if not .IsHome }}
     <div class="h-16 lg:h-20"></div>
