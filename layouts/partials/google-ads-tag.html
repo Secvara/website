@@ -1,11 +1,18 @@
 {{- $adsId := site.Params.googleAdsId -}}
-{{- if $adsId -}}
+{{- $analyticsId := site.Params.googleAnalyticsId -}}
+{{- $scriptId := $analyticsId | default $adsId -}}
+{{- if $scriptId -}}
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $adsId }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $scriptId }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
+    {{- if $analyticsId }}
+    gtag('config', '{{ $analyticsId }}');
+    {{- end }}
+    {{- if and $adsId (ne $adsId $analyticsId) }}
     gtag('config', '{{ $adsId }}');
+    {{- end }}
   </script>
 {{- end -}}

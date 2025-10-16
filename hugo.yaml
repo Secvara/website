@@ -41,6 +41,7 @@ params:
   social:
     twitter: Secvara
   googleAdsId: "AW-17655410071"
+  googleAnalyticsId: "G-HS4YQE9CVK"
 
 markup:
   goldmark:
