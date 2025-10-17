@@ -18,3 +18,10 @@ hugo.linux
 # Local dev server artifacts
 hugo.out
 .hugo-dev.pid
+
+# Local automation secrets
+scripts/google/credentials/
+.venv/
+scripts/google/config.yaml
+.env
+.env.local
