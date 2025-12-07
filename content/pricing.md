@@ -1,38 +1,37 @@
 ---
-title: Pricing
-description: Typical ranges for SECURE tiers. Final quotes reflect your size, sites, and regulatory scope.
+title: Request a Custom Quote
+description: Every organization is different. Contact us to discuss your security needs and receive a tailored proposal.
 ---
 
-# Pricing
+# Request a Custom Quote
 
-The SECURE program scales with your size, sites, and regulatory scope. Use this comparison to understand what each tier includes; we tailor final proposals after discovery.
-
-Book a call to scope your quote: https://cal.com/secvara/pre-sra
-
----
-
-| Feature / Deliverable                          | **SECURE Foundations** | **SECURE Pillars** | **SECURE Spire** |
-|------------------------------------------------|-------------------------|--------------------|------------------|
-| **Annual Security Risk Assessment (SECURE Aware)** | ✔︎ | ✔︎ | ✔︎ |
-| **Policy Starter Kit** (AUP, InfoSec, IR, Vendor, BCP) | ✔︎ | ✔︎ | ✔︎ |
-| **Discovery & Onboarding Questionnaire**       | ✔︎ | ✔︎ | ✔︎ |
-| **Risk Register**                              | ✔︎ (initial setup, updated annually) | ✔︎ (monthly updates) | ✔︎ (strategic oversight) |
-| **Quarterly Security Check-Ins**               | ✔︎ (quarterly, 1 hour) | ✔︎ (quarterly)     | ✔︎ (executive presence) |
-| **90-Day Quick Wins Checklist**                | ✔︎ | ✔︎ | ✔︎ |
-| **Security Team Support**                      | — | ✔︎ (fractional analyst hours) | ✔︎ (analysts + CISO leadership) |
-| **Quarterly Security Report Deck**             | — | ✔︎ | ✔︎ (enhanced with ROI metrics) |
-| **Incident Response Tabletop Exercise**        | — | ✔︎ (annual) | ✔︎ (annual; CISO-led) |
-| **Vendor Risk Review**                         | — | ✔︎ (basic) | ✔︎ (advanced, contractual, ongoing) |
-| **End-User Awareness Training**                | — | ✔︎ (annual) | ✔︎ (customized enterprise program) |
-| **Board Briefing Deck**                        | — | ✔︎ (semi-annual) | ✔︎ (executive-level reporting) |
-| **Advanced Security Architecture Reviews**     | — | — | ✔︎ (network, cloud, endpoint) |
-| **Regulatory & Audit Readiness**               | — | — | ✔︎ (HIPAA, SOC 2, PCI, others) |
-| **Business Continuity / Disaster Recovery (BC/DR)** | — | — | ✔︎ (plans + annual exercise) |
-| **Red Team / Penetration Test Coordination**   | — | — | ✔︎ (annual; vendor-managed) |
-| **ROI & Performance Renewal Proposal**         | — | — | ✔︎ (measurable program value) |
-| **Case Study & Success Story**                 | — | — | ✔︎ (documented maturity achievement) |
-| **Starting Price**                             | From **$2,000/month** | From **$5,000/month** | From **$12,000/month** |
+Every organization has unique security needs. Our SECURE program scales with your size, sites, and regulatory scope. We tailor each proposal after understanding your specific requirements.
 
 ---
 
-Want help choosing a tier? See the program overview: [Program Overview](/secure-program/) or jump on a quick call: https://cal.com/secvara/pre-sra
+## How It Works
+
+1. **Discovery Call** — We learn about your organization, industry, and security goals.
+2. **Scope Assessment** — We evaluate your size, sites, compliance requirements, and current posture.
+3. **Custom Proposal** — You receive a tailored quote reflecting exactly what you need.
+
+---
+
+## What We Offer
+
+We offer flexible engagement options:
+
+- **SECURE Aware** — One-time Security Risk Assessment for immediate visibility
+- **SECURE Foundations** — Entry-level tier with policies, assessments, and quarterly reviews
+- **SECURE Pillars** — Growth tier with ongoing oversight, reporting, and training
+- **SECURE Spire** — Executive tier with CISO leadership, resilience, and audit readiness
+
+See the full feature comparison: [Compare Tiers](/tiers/) or learn about [The SECURE Program](/secure-program/).
+
+---
+
+## Ready to Get Started?
+
+Book a discovery call to discuss your needs and receive a custom quote.
+
+<a href="https://cal.com/secvara/pre-sra" target="_blank" class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors inline-block mt-4">Book a Discovery Call</a>

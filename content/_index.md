@@ -16,7 +16,6 @@ hero_section:
 ###############
 about_section:
     title: Become <span>SECURE Aware</span>
-    price: "From $7,500 (one‑time)"
     details: >-
         SECURE Aware is a one‑time Security Risk Assessment (SRA) that gives you a clear baseline of risk and compliance. We evaluate your organization against NIST CSF, then crosswalk to all compliance requirements unique to your organization. <br><br>
 
@@ -42,7 +41,6 @@ services_section:
     tiers:
         - name: SECURE Foundations
           blurb: Establish the essentials and build momentum with quarterly reviews.
-          price: "From $2,000/month"
           bullets:
               - Annual Security Risk Assessment (NIST CSF)
               - Policy Starter Kit (AUP, InfoSec, IR, Vendor, BCP)
@@ -52,7 +50,6 @@ services_section:
           cta: Learn more
         - name: SECURE Pillars
           blurb: Ongoing oversight, structured reporting, training, vendor and incident management.
-          price: "From $5,000/month"
           bullets:
               - Annual Security Risk Assessment (NIST CSF)
               - Policy Starter Kit (AUP, InfoSec, IR, Vendor, BCP)
@@ -66,7 +63,6 @@ services_section:
           cta: Learn more
         - name: SECURE Spire
           blurb: Comprehensive security, resilience, and audit readiness that scales with you.
-          price: "From $12,000/month"
           bullets:
               - Annual Security Risk Assessment (NIST CSF)
               - Policy Starter Kit (AUP, InfoSec, IR, Vendor, BCP)
@@ -142,7 +138,6 @@ services_section:
                 - Foundations (Quarterly)
                 - Pillars (Ongoing)
                 - Spire (Ongoing)
-    # Pricing snippet removed; pricing now shown per tier
 
 ################
 ##### Services

@@ -25,6 +25,6 @@ description: Compare SECURE Foundations, Pillars, and Spire to choose the right 
 | **Red Team / Penetration Test Coordination**   | — | — | ✔︎ (annual; vendor-managed) |
 | **ROI & Performance Renewal Proposal**         | — | — | ✔︎ (measurable program value) |
 | **Case Study & Success Story**                 | — | — | ✔︎ (documented maturity achievement) |
-| **Starting Price**                             | From **$2,000/month** | From **$5,000/month** | From **$12,000/month** |
+| **Get Started**                                | [Request Quote](/pricing/) | [Request Quote](/pricing/) | [Request Quote](/pricing/) |
 
-See details: [Deliverables](/deliverables/) • [Pricing](/pricing/) • Get started: https://cal.com/secvara/pre-sra
+See details: [Deliverables](/deliverables/) • [Request a Custom Quote](/pricing/) • Get started: https://cal.com/secvara/pre-sra

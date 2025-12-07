@@ -27,9 +27,8 @@ Start anywhere, grow over time:
 - Spire — Executive‑level leadership, resilience, and audit readiness
 
 ## SECURE Aware — Intro & Annual Baseline
-One‑time engagement — From $7,500
 
-A standalone Security Risk Assessment (SRA) for immediate visibility into risks and compliance gaps. Also included annually in every tier to keep pace with business and regulatory change.
+A standalone, one-time Security Risk Assessment (SRA) for immediate visibility into risks and compliance gaps. Also included annually in every tier to keep pace with business and regulatory change.
 
 Deliverables:
 - NIST CSF Security Risk Assessment (mapped to HIPAA or your framework)
@@ -41,8 +40,6 @@ Deliverables:
 ---
 
 ### SECURE Foundations — Entry‑Level Tier
-From $2,000/month
-
 Establish the essentials with policies, assessments, and a 90‑day quick wins plan; quarterly check‑ins keep progress on track.
 
 Includes:
@@ -53,8 +50,6 @@ Includes:
 - Quick Wins implementation roadmap
 
 ### SECURE Pillars — Growth Tier
-From $5,000/month
-
 Strengthen your program with ongoing oversight, structured reporting, annual training, and vendor and incident management.
 
 Includes everything in Foundations, plus:
@@ -66,8 +61,6 @@ Includes everything in Foundations, plus:
 - Semi‑annual board briefing deck
 
 ### SECURE Spire — Executive Tier
-From $12,000/month
-
 Elevate security to an executive‑level business function with CISO leadership, enterprise resilience, and strategic alignment.
 
 Includes everything in Pillars, plus:
@@ -80,7 +73,7 @@ Includes everything in Pillars, plus:
 - ROI and performance reporting for renewal
 - Documented success case study
 
-See [Pricing](/pricing/) for typical ranges or book a call to request a quote: https://cal.com/secvara/pre-sra
+[Request a custom quote](/pricing/) or book a call: https://cal.com/secvara/pre-sra
 
 ---
 
@@ -104,4 +97,4 @@ See [Pricing](/pricing/) for typical ranges or book a call to request a quote: h
 | **Red Team / Penetration Test Coordination**   | — | — | ✔︎ (annual; vendor-managed) |
 | **ROI & Performance Renewal Proposal**         | — | — | ✔︎ (measurable program value) |
 | **Case Study & Success Story**                 | — | — | ✔︎ (documented maturity achievement) |
-| **Starting Price**                             | From **$2,000/month** | From **$5,000/month** | From **$12,000/month** |
+| **Get Started**                                | [Request Quote](/pricing/) | [Request Quote](/pricing/) | [Request Quote](/pricing/) |

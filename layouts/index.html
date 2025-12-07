@@ -83,9 +83,6 @@
             {{ $btn := (.btn | default "https://cal.com/secvara/pre-sra") }}
             <div class="mt-6 flex items-center gap-4 flex-wrap">
                 <a href="{{ $btn }}" {{ if .outbound }}target="_blank"{{ end }} class="uppercase font-primary py-2 px-4 rounded-lg bg-primary border-2 border-transparent text-white text-md hover:bg-primary/80 transition-colors">Become Secvara SECURE</a>
-                {{ with .price }}
-                <div class="font-primary text-sm text-black/70"><strong>{{ . }}</strong></div>
-                {{ end }}
             </div>
         </div>
     </div>
@@ -228,10 +225,7 @@
             {{ range . }}
             <div class="bg-white border border-black/10 p-6 rounded-lg shadow h-full flex flex-col">
               <h5 class="font-primary text-xl font-bold mb-2">{{ .name }}</h5>
-              <p class="font-primary text-black/80 mb-2">{{ .blurb }}</p>
-              {{ with .price }}
-              <div class="font-primary text-sm text-black/70 mb-4"><strong>{{ . }}</strong></div>
-              {{ end }}
+              <p class="font-primary text-black/80 mb-4">{{ .blurb }}</p>
               {{ with .bullets }}
               <ul class="list-disc pl-5 font-primary text-black/80 mb-4">
                 {{ range . }}<li>{{ . }}</li>{{ end }}
